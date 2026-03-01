@@ -3,12 +3,17 @@ import { tv } from 'tailwind-variants';
 interface TextTitleProps {
   text: string;
   size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  color?: 'primary' | 'secondary';
 }
 
-const TextTitle = ({ text, size = 'h1' }: TextTitleProps) => {
+const TextTitle = ({ text, size = 'h1', color }: TextTitleProps) => {
   const title = tv({
     base: 'text-brand-blue font-semibold',
     variants: {
+      color: {
+        primary: 'text-brand-blue',
+        secondary: 'text-brand-white-light',
+      },
       size: {
         h1: 'text-[56px] sm:text-8xl sm:leading-[0.9]',
         h2: 'text-[40px] sm:text-[64px]',
@@ -20,6 +25,7 @@ const TextTitle = ({ text, size = 'h1' }: TextTitleProps) => {
     },
     defaultVariants: {
       size: 'h1',
+      color: 'primary',
     },
   });
 
@@ -27,6 +33,7 @@ const TextTitle = ({ text, size = 'h1' }: TextTitleProps) => {
     <span
       className={title({
         size,
+        color,
       })}
     >
       {text}
