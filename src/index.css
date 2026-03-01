@@ -1,1 +1,61 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Rubik', sans-serif;
+
+  /* brand colors */
+  --color-brand-blue: #1b69d2;
+  --color-brand-blue-light: #5390e3;
+  --color-brand-blue-dark: #1357b3;
+
+  --color-brand-blue-600: #062e64;
+  --color-brand-blue-500: #0c428a;
+  --color-brand-blue-400: #1355af;
+  --color-brand-blue-300: #1b69d2;
+  --color-brand-blue-200: #6199e5;
+  --color-brand-blue-100: #aac9f3;
+
+  --color-brand-white: #d8dbe3;
+  --color-brand-white-light: #e8ebf0;
+  --color-brand-white-dark: #f7f9fc;
+
+  --color-brand-black: #06090f;
+  --color-brand-black-light: #0f141f;
+  --color-brand-black-dark: #151b26;
+
+  --color-brand-gray-2: #2b2b2c;
+  --color-brand-gray-3: #424344;
+  --color-brand-gray-4: #595a5c;
+  --color-brand-gray-5: #717274;
+  --color-brand-gray-6: #888a8c;
+  --color-brand-gray-7: #9ea0a3;
+
+  --color-brand-red: #f03d3d;
+  --color-brand-yellow: #ffce52;
+  --color-brand-green: #0bb07b;
+
+  --background-image-brand-gradient-blue-light: linear-gradient(
+    to right,
+    #5390e3,
+    #1357b3
+  );
+
+  --background-image-brand-gradient-blue-dark: linear-gradient(
+    to right,
+    #1b69d2,
+    #07346f
+  );
+
+  --background-image-brand-gradient-black: linear-gradient(
+    to right,
+    #0F141F,
+    #06090F
+  );
+
+  --background-image-brand-gradient-white: linear-gradient(
+    to right,
+    #DADEE5,
+    #F7F9FC
+  );
+}
