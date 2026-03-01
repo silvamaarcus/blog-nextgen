@@ -2,9 +2,10 @@
 @import 'tailwindcss';
 
 @theme {
+  /* font */
   --font-sans: 'Rubik', sans-serif;
 
-  /* brand colors */
+  /* colors */
   --color-brand-blue: #1b69d2;
   --color-brand-blue-light: #5390e3;
   --color-brand-blue-dark: #1357b3;
@@ -49,13 +50,13 @@
 
   --background-image-brand-gradient-black: linear-gradient(
     to right,
-    #0F141F,
-    #06090F
+    #0f141f,
+    #06090f
   );
 
   --background-image-brand-gradient-white: linear-gradient(
     to right,
-    #DADEE5,
-    #F7F9FC
+    #dadee5,
+    #f7f9fc
   );
 }
