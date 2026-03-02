@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import 'tailwindcss';
 
+body {
+  @apply bg-brand-black-dark;
+}
+
 @theme {
   /* font */
   --font-sans: 'Rubik', sans-serif;
@@ -59,4 +63,8 @@
     #dadee5,
     #f7f9fc
   );
+}
+
+.btn-gradient-border {
+  border-image: linear-gradient(to right, #5390e3, #1357b3) 1;
 }
