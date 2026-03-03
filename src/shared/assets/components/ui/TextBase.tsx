@@ -1,12 +1,13 @@
 import { tv } from 'tailwind-variants';
 
 interface TextBaseProps {
-  text: string;
+  children: string;
   size?: 'b1' | 'b2' | 'b3';
   color?: 'primary' | 'secondary' | 'body';
+  className?: string;
 }
 
-const TextBase = ({ text, size, color }: TextBaseProps) => {
+const TextBase = ({ children, size, color, className }: TextBaseProps) => {
   const title = tv({
     base: 'text-brand-blue font-medium',
     variants: {
@@ -32,9 +33,10 @@ const TextBase = ({ text, size, color }: TextBaseProps) => {
       className={title({
         color,
         size,
+        className,
       })}
     >
-      {text}
+      {children}
     </span>
   );
 };
