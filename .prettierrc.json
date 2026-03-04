@@ -3,5 +3,6 @@
   "singleQuote": true,
   "trailingComma": "es5",
   "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindFunctions": ["tv"]
+  "tailwindFunctions": ["tv"],
+  "tabWidth": 4
 }
