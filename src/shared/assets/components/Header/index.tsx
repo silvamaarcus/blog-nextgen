@@ -1,10 +1,11 @@
 import './style.css';
 
-import { Button, Input } from '../ui';
 import { useState } from 'react';
+
 import { BlogLogoIcon, SearchIcon } from '../../icons';
-import TextBase from '../ui/TextBase';
 import BlogLogoIconMobile from '../../icons/blog-logo.svg';
+import { Button, Input } from '../ui';
+import TextBase from '../ui/TextBase';
 
 interface MobileHeaderProps {
     active: string;
@@ -18,7 +19,7 @@ interface MenuMobileProps {
 
 function DesktopHeader() {
     return (
-        <section className="scroll border-brand-white-dark/10 fixed top-0 z-10 hidden w-full border-b backdrop-blur-[6px] lg:block">
+        <section className="scroll border-brand-white-dark/10 fixed top-0 z-90 hidden w-full border-b backdrop-blur-[6px] lg:block">
             <div className="container">
                 <header className="flex h-20 items-center justify-between px-5">
                     <div className="flex items-center gap-14">
