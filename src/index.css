@@ -2,7 +2,7 @@
 @import 'tailwindcss';
 
 body {
-  @apply bg-brand-black-dark;
+  @apply bg-brand-black;
 }
 
 @theme {
