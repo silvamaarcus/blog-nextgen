@@ -5,6 +5,7 @@ interface InputProps {
   errorMessage?: string;
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  className?: string;
 }
 
 const Input = ({
@@ -14,6 +15,7 @@ const Input = ({
   errorMessage,
   icon,
   iconPosition = 'left',
+  className,
   ...rest
 }: InputProps) => {
   const getPositionClasses = () => {
@@ -39,7 +41,7 @@ const Input = ({
           type={type}
           placeholder={placeholder}
           {...rest}
-          className={`bg-brand-black-light text-brand-white-light focus:ring-brand-blue h-14 w-full rounded focus:border-transparent focus:ring-2 focus:outline-none ${getPositionClasses()} ${errorMessage ? 'border-brand-red border' : 'border border-transparent'}`}
+          className={`bg-brand-black-light text-brand-white-light focus:ring-brand-blue h-14 w-full rounded focus:border-transparent focus:ring-2 focus:outline-none ${getPositionClasses()} ${errorMessage ? 'border-brand-red border' : 'border border-transparent'} ${className}`}
         />
 
         {icon && (

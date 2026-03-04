@@ -33,6 +33,7 @@ import ThumbsUpIcon from './thumbs-up.svg?react';
 import UserIcon from './user.svg?react';
 import XIcon from './x.svg?react';
 import ZapIcon from './zap.svg?react';
+import BlogLogoIcon from './blog-logo.svg?react';
 
 export {
   CopyIcon,
@@ -69,5 +70,6 @@ export {
   ThumbsUpIcon,
   UserIcon,
   XIcon,
-  ZapIcon
+  ZapIcon,
+  BlogLogoIcon,
 };

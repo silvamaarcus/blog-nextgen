@@ -68,3 +68,7 @@ body {
 .btn-gradient-border {
   border-image: linear-gradient(to right, #5390e3, #1357b3) 1;
 }
+
+.container {
+  @apply max-w-7xl mx-auto my-0;
+}

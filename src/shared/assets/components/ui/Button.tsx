@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
-  color?: 'primary' | 'secondary' | 'danger';
+  color?: 'primary' | 'secondary' | 'danger' | 'ghost';
   className?: string;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
@@ -25,6 +25,7 @@ const Button = ({
         primary: 'bg-brand-gradient-blue-light',
         secondary: 'btn-gradient-border rounded border bg-transparent',
         danger: 'bg-brand-red',
+        ghost: 'bg-transparent text-brand-blue',
       },
     },
     defaultVariants: {
