@@ -22,9 +22,31 @@ const slides = [
 
 describe('Slider Component', () => {
     it('should render the correct number of slides', () => {
-        render(<Slider images={slides} />);
+        render(<Slider images={slides} />); // Renderiza o componente com os slides de teste
 
-        const renderedSlides = screen.getAllByRole('img');
-        expect(renderedSlides).toHaveLength(slides.length);
+        const renderedSlides = screen.getAllByRole('img'); // Obtém todas as imagens renderizadas no componente
+        expect(renderedSlides).toHaveLength(slides.length); // Verifica se o número de imagens renderizadas é igual ao número de slides fornecidos
+    });
+
+    it('should apply autoplay to slides', () => {
+        const time = vi.useFakeTimers(); // Mock de timers para controlar o tempo durante o teste
+
+        render(<Slider images={slides} />); // Renderiza o componente
+
+        // Verifica se o primeiro slide está visível inicialmente
+        const firstImg = screen.getByAltText(slides[0].label);
+        expect(firstImg).toBeVisible();
+
+        // Avança o tempo para o próximo slide e verifica se o segundo slide está visível
+        time.advanceTimersByTime(3500);
+        const secondImg = screen.getByAltText(slides[1].label);
+        expect(secondImg).toBeVisible();
+
+        // Avança mais um intervalo para verificar o terceiro slide
+        time.advanceTimersByTime(3500);
+        const thirdImg = screen.getByAltText(slides[2].label);
+        expect(thirdImg).toBeVisible();
+
+        vi.useRealTimers(); // Limpa o mock de timers para evitar efeitos colaterais em outros testes
     });
 });
