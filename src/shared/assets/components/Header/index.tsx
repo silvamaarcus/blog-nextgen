@@ -1,6 +1,7 @@
 import './style.css';
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { BlogLogoIcon, SearchIcon } from '../../icons';
 import BlogLogoIconMobile from '../../icons/blog-logo.svg';
@@ -18,6 +19,12 @@ interface MenuMobileProps {
 }
 
 function DesktopHeader() {
+    const navigate = useNavigate();
+
+    const handleLoginPage = () => {
+        navigate('/');
+    };
+
     return (
         <section className="scroll border-brand-white-dark/10 fixed top-0 z-90 hidden w-full border-b backdrop-blur-[6px] lg:block">
             <div className="container">
@@ -69,7 +76,7 @@ function DesktopHeader() {
                             iconPosition="right"
                             className="min-w-70"
                         />
-                        <Button>Login</Button>
+                        <Button onClick={handleLoginPage}>Login</Button>
                     </div>
                 </header>
             </div>
@@ -78,6 +85,12 @@ function DesktopHeader() {
 }
 
 function MobileHeader({ active, handleClick }: MobileHeaderProps) {
+    const navigate = useNavigate();
+
+    const handleLoginPage = () => {
+        navigate('/');
+    };
+
     return (
         <section className="border-brand-white-dark/10 fixed top-0 left-0 z-10 w-full border-b lg:hidden">
             <div className="container">
@@ -94,9 +107,13 @@ function MobileHeader({ active, handleClick }: MobileHeaderProps) {
                         onClick={handleClick}
                     ></div>
                     <span>
-                        <a href="/home" className="text-brand-blue">
+                        <Button
+                            color="ghost"
+                            className="text-brand-blue"
+                            onClick={handleLoginPage}
+                        >
                             Login
-                        </a>
+                        </Button>
                     </span>
                 </header>
             </div>
