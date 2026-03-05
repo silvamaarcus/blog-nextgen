@@ -1,3 +1,4 @@
+import BlogLogoIcon from './blog-logo.svg?react';
 import CopyIcon from './copy.svg?react';
 import CpuIcon from './cpu.svg?react';
 import DatabaseIcon from './database.svg?react';
@@ -17,10 +18,11 @@ import GridIcon from './grid.svg?react';
 import HashIcon from './hash.svg?react';
 import HeartIcon from './heart.svg?react';
 import HomeIcon from './home.svg?react';
+import InstagramIcon from './instagram.svg?react';
 import LayersIcon from './layers.svg?react';
 import LockIcon from './lock.svg?react';
-import MapPinIcon from './map-pin.svg?react';
 import MapIcon from './map.svg?react';
+import MapPinIcon from './map-pin.svg?react';
 import MicIcon from './mic.svg?react';
 import MonitorIcon from './monitor.svg?react';
 import PenToolIcon from './pen-tool.svg?react';
@@ -30,46 +32,50 @@ import Share2Icon from './share-2.svg?react';
 import ShieldIcon from './shield.svg?react';
 import ShoppingCartIcon from './shopping-cart.svg?react';
 import ThumbsUpIcon from './thumbs-up.svg?react';
+import TwitterIcon from './twitter.svg?react';
 import UserIcon from './user.svg?react';
 import XIcon from './x.svg?react';
+import YoutubeIcon from './youtube.svg?react';
 import ZapIcon from './zap.svg?react';
-import BlogLogoIcon from './blog-logo.svg?react';
 
 export {
-  CopyIcon,
-  CpuIcon,
-  DatabaseIcon,
-  DollarSignIcon,
-  DropletIcon,
-  EyeIcon,
-  FacebookIcon,
-  GiftIcon,
-  GitBranchIcon,
-  GitCommitIcon,
-  GitMergeIcon,
-  GitPullRequestIcon,
-  GithubIcon,
-  GitlabIcon,
-  GlobeIcon,
-  GridIcon,
-  HashIcon,
-  HeartIcon,
-  HomeIcon,
-  LayersIcon,
-  LockIcon,
-  MapPinIcon,
-  MapIcon,
-  MicIcon,
-  MonitorIcon,
-  PenToolIcon,
-  SearchIcon,
-  SettingsIcon,
-  Share2Icon,
-  ShieldIcon,
-  ShoppingCartIcon,
-  ThumbsUpIcon,
-  UserIcon,
-  XIcon,
-  ZapIcon,
-  BlogLogoIcon,
+    BlogLogoIcon,
+    CopyIcon,
+    CpuIcon,
+    DatabaseIcon,
+    DollarSignIcon,
+    DropletIcon,
+    EyeIcon,
+    FacebookIcon,
+    GiftIcon,
+    GitBranchIcon,
+    GitCommitIcon,
+    GithubIcon,
+    GitlabIcon,
+    GitMergeIcon,
+    GitPullRequestIcon,
+    GlobeIcon,
+    GridIcon,
+    HashIcon,
+    HeartIcon,
+    HomeIcon,
+    InstagramIcon,
+    LayersIcon,
+    LockIcon,
+    MapIcon,
+    MapPinIcon,
+    MicIcon,
+    MonitorIcon,
+    PenToolIcon,
+    SearchIcon,
+    SettingsIcon,
+    Share2Icon,
+    ShieldIcon,
+    ShoppingCartIcon,
+    ThumbsUpIcon,
+    TwitterIcon,
+    UserIcon,
+    XIcon,
+    YoutubeIcon,
+    ZapIcon,
 };
