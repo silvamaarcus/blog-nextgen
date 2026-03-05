@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { TextTitle } from '../../../../shared/assets/components/ui';
+import { TextTitle } from '@/shared/assets/components/ui';
 
 interface SliderDataProps {
     image: string;

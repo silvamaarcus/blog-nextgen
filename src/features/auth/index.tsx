@@ -1,7 +1,8 @@
-import Footer from '../../shared/assets/components/Footer';
-import Header from '../../shared/assets/components/Header';
-import { Button, Input, TextTitle } from '../../shared/assets/components/ui';
-import { BlogLogoIcon, LockIcon, UserIcon } from '../../shared/assets/icons';
+import Footer from '@/shared/assets/components/Footer';
+import Header from '@/shared/assets/components/Header';
+import { Button, Input, TextTitle } from '@/shared/assets/components/ui';
+import { BlogLogoIcon, LockIcon, UserIcon } from '@/shared/assets/icons';
+
 import Slider from './components/Slider';
 
 const slides = [
