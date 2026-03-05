@@ -1,3 +1,4 @@
+import Footer from '../../shared/assets/components/Footer';
 import Header from '../../shared/assets/components/Header';
 import { Button, Input, TextTitle } from '../../shared/assets/components/ui';
 import { BlogLogoIcon, LockIcon, UserIcon } from '../../shared/assets/icons';
@@ -109,6 +110,8 @@ const LoginPage = () => {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 };
