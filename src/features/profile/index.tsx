@@ -7,6 +7,7 @@ import {
     TextTitle,
 } from '@/shared/assets/components/ui';
 import Avatar from '@/shared/assets/components/ui/Avatar';
+import Textarea from '@/shared/assets/components/ui/Textarea';
 import { PlusIcon, UserIcon } from '@/shared/assets/icons';
 
 const ProfilePage = () => {
@@ -91,6 +92,15 @@ const ProfilePage = () => {
                                 </TextBase>
                                 <Input />
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-20 grid grid-cols-1 items-center gap-8 px-4 sm:grid-cols-12">
+                        <div className="flex w-full flex-col gap-4 sm:col-span-12">
+                            <TextBase size="b2" color="secondary">
+                                Bio
+                            </TextBase>
+                            <Textarea />
                         </div>
                     </div>
                 </div>
