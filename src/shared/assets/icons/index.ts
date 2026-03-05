@@ -26,6 +26,7 @@ import MapPinIcon from './map-pin.svg?react';
 import MicIcon from './mic.svg?react';
 import MonitorIcon from './monitor.svg?react';
 import PenToolIcon from './pen-tool.svg?react';
+import PlusIcon from './plus.svg?react';
 import SearchIcon from './search.svg?react';
 import SettingsIcon from './settings.svg?react';
 import Share2Icon from './share-2.svg?react';
@@ -67,6 +68,7 @@ export {
     MicIcon,
     MonitorIcon,
     PenToolIcon,
+    PlusIcon,
     SearchIcon,
     SettingsIcon,
     Share2Icon,
