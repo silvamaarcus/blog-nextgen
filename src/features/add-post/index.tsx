@@ -33,7 +33,7 @@ const AddPostPage = () => {
         <>
             <Header />
 
-            <section className="mt-42.5 mb-80">
+            <section className="mt-42.5">
                 <div className="container space-y-20 px-4">
                     <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-12">
                         <div className="col-span-12 sm:col-span-4">

@@ -9,8 +9,8 @@ import Divider from '../ui/Divider';
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="container mt-90">
+        <footer className="bg-brand-black-light mt-100 py-20">
+            <div className="container">
                 <div className="grid grid-cols-1 gap-8 px-4 sm:grid-cols-12">
                     <div className="col-span-12 sm:col-span-3">
                         <TextTitle size="h4" color="secondary">
@@ -100,7 +100,7 @@ const Footer = () => {
 
                 <Divider className="my-16" />
 
-                <div className="mb-16 flex items-center justify-between px-4">
+                <div className="flex items-center justify-between px-4">
                     <TextBase size="b3" color="body">
                         2022 | Todos os direitos reservados.
                     </TextBase>
