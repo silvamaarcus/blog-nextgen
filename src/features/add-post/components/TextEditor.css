@@ -1,0 +1,21 @@
+.prose a[href] {
+    color: var(--color-brand-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.prose h1 {
+    font-size: 2.25rem;
+    color: var(--color-brand-white-dark);
+}
+
+.prose h2 {
+    font-size: 2rem;
+    color: var(--color-brand-white-dark);
+}
+
+.prose p {
+    font-size: 1.125rem;
+    color: var(--color-brand-gray-6);
+    line-height: 1.4;
+}
