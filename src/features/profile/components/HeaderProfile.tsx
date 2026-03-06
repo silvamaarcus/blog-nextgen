@@ -7,7 +7,11 @@ import {
 } from '@/shared/assets/components/ui';
 import { PlusIcon, UserIcon } from '@/shared/assets/icons';
 
+import { useProfileSection } from '../hooks/useProfileSection';
+
 const HeaderProfile = () => {
+    const { setSection } = useProfileSection();
+
     return (
         <section className="mt-42.5">
             <div className="container space-y-20 px-4">
@@ -36,6 +40,7 @@ const HeaderProfile = () => {
                             <Button
                                 color="secondary"
                                 className="flex w-full items-center justify-center gap-4 sm:w-auto"
+                                onClick={() => setSection('addPost')}
                             >
                                 <PlusIcon />
                                 Adicionar Post
@@ -43,6 +48,7 @@ const HeaderProfile = () => {
                             <Button
                                 color="secondary"
                                 className="flex w-full items-center justify-center gap-4 sm:w-auto"
+                                onClick={() => setSection('profile')}
                             >
                                 <UserIcon />
                                 Meus Dados
