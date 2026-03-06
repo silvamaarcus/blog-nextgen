@@ -9,12 +9,13 @@ import {
     Divider,
     Input,
     Select,
-    Textarea,
     TextBase,
     TextTitle,
     ToggleSwitch,
 } from '@/shared/assets/components/ui';
 import { PlusIcon, UserIcon } from '@/shared/assets/icons';
+
+import TextEditor from './components/TextEditor';
 
 const options = [
     { value: 'tecnologia', label: 'Tecnologia' },
@@ -27,6 +28,10 @@ const AddPostPage = () => {
 
     const handleToggleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setHasBanner(event.target.checked);
+    };
+
+    const handleEditorChange = (html: string) => {
+        console.log(html);
     };
 
     return (
@@ -141,7 +146,12 @@ const AddPostPage = () => {
                             <TextBase size="b2" color="secondary">
                                 Conteúdo
                             </TextBase>
-                            <Textarea />
+                            <TextBase size="b3" color="body">
+                                Escreva o conteúdo do post utilizando o editor.
+                                Para inserir links, basta colar a URL
+                                diretamente no editor.
+                            </TextBase>
+                            <TextEditor onChange={handleEditorChange} />
                         </div>
                     </div>
 
