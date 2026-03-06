@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { TextTitle } from '@/shared/assets/components/ui';
+import { Badge, TextTitle } from '@/shared/assets/components/ui';
 
 interface SliderDataProps {
     image: string;
@@ -48,9 +48,7 @@ const Slider = ({ images }: SliderProps) => {
                     <div className="absolute inset-0 bg-black/40" />
                     {/* Texto central */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-                        <span className="bg-brand-blue mb-3 inline-block rounded px-3 py-1 text-xs font-semibold tracking-widest text-white uppercase shadow-lg">
-                            {slide.label}
-                        </span>
+                        <Badge className="mb-2">{slide.label}</Badge>
                         <TextTitle
                             size="h4"
                             color="secondary"
