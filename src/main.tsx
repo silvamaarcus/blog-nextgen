@@ -4,9 +4,10 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import LoginPage from './features/auth/index.tsx';
-import NotFoundPage from './features/not-found/index.tsx';
-import ProfilePage from './features/profile/index.tsx';
+import AddPostPage from './features/add-post';
+import LoginPage from './features/auth';
+import NotFoundPage from './features/not-found';
+import ProfilePage from './features/profile';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     {
         path: '/profile',
         element: <ProfilePage />,
+    },
+    {
+        path: '/addPost',
+        element: <AddPostPage />,
     },
     {
         path: '*',

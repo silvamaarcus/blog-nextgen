@@ -28,7 +28,7 @@ const LoginPage = () => {
         <>
             <Header />
 
-            <section className="my-42.5">
+            <section className="my-82.5">
                 <div className="container">
                     <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-18">
                         {/* Formulario de login */}

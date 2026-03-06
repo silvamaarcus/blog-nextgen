@@ -1,17 +1,34 @@
+import { useState } from 'react';
+
 import Footer from '@/shared/assets/components/Footer';
 import Header from '@/shared/assets/components/Header';
 import {
     Avatar,
     Button,
+    DateTimePicker,
     Divider,
     Input,
+    Select,
     Textarea,
     TextBase,
     TextTitle,
+    ToggleSwitch,
 } from '@/shared/assets/components/ui';
 import { PlusIcon, UserIcon } from '@/shared/assets/icons';
 
-const ProfilePage = () => {
+const options = [
+    { value: 'tecnologia', label: 'Tecnologia' },
+    { value: 'fotografia', label: 'Fotografia' },
+    { value: 'games', label: 'Games' },
+];
+
+const AddPostPage = () => {
+    const [hasBanner, setHasBanner] = useState<boolean>(false);
+
+    const handleToggleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setHasBanner(event.target.checked);
+    };
+
     return (
         <>
             <Header />
@@ -62,27 +79,48 @@ const ProfilePage = () => {
 
                     <div className="mt-20 flex flex-col gap-4">
                         <TextTitle size="h3" color="secondary">
-                            Meus dados
+                            Adicionar Post
                         </TextTitle>
                         <TextBase size="b3" color="body">
-                            Abaixo são listados os seus dados de acesso ao blog.
+                            Preencha os campos abaixo para adicionar um novo
+                            post ao blog.
                         </TextBase>
                     </div>
 
                     <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-12">
-                        <div className="col-span-12 sm:col-span-2">
+                        <div className="col-span-12 sm:col-span-3">
                             <div>
                                 <TextBase size="b2" color="secondary">
-                                    ID
+                                    Data
+                                </TextBase>
+                                <DateTimePicker />
+                            </div>
+                        </div>
+
+                        <div className="col-span-12 sm:col-span-3">
+                            <div>
+                                <TextBase size="b2" color="secondary">
+                                    Categoria
+                                </TextBase>
+                                <Select options={options} />
+                            </div>
+                        </div>
+
+                        <div className="col-span-12 sm:col-span-6">
+                            <div>
+                                <TextBase size="b2" color="secondary">
+                                    Título
                                 </TextBase>
                                 <Input />
                             </div>
                         </div>
+                    </div>
 
-                        <div className="col-span-12 sm:col-span-4">
+                    <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-12">
+                        <div className="col-span-12 sm:col-span-9">
                             <div>
                                 <TextBase size="b2" color="secondary">
-                                    Username
+                                    Resumo do post
                                 </TextBase>
                                 <Input />
                             </div>
@@ -91,18 +129,9 @@ const ProfilePage = () => {
                         <div className="col-span-12 sm:col-span-3">
                             <div>
                                 <TextBase size="b2" color="secondary">
-                                    Nome
+                                    Tempo de leitura
                                 </TextBase>
-                                <Input />
-                            </div>
-                        </div>
-
-                        <div className="col-span-12 sm:col-span-3">
-                            <div>
-                                <TextBase size="b2" color="secondary">
-                                    Sobrenome
-                                </TextBase>
-                                <Input />
+                                <DateTimePicker type="time" />
                             </div>
                         </div>
                     </div>
@@ -110,16 +139,31 @@ const ProfilePage = () => {
                     <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-12">
                         <div className="flex w-full flex-col gap-4 sm:col-span-12">
                             <TextBase size="b2" color="secondary">
-                                Bio
+                                Conteúdo
                             </TextBase>
                             <Textarea />
                         </div>
                     </div>
 
+                    <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-12">
+                        <div className="flex w-full flex-col gap-4 sm:col-span-12">
+                            <div className="flex items-center gap-2">
+                                <ToggleSwitch
+                                    checked={hasBanner}
+                                    onChange={handleToggleChange}
+                                    name="post-published"
+                                />
+                                <TextBase size="b2" color="secondary">
+                                    Banner do post (URL da imagem)
+                                </TextBase>
+                            </div>
+
+                            {hasBanner && <Input />}
+                        </div>
+                    </div>
+
                     <div className="flex w-full justify-end">
-                        <Button className="w-full sm:w-auto">
-                            Salvar dados
-                        </Button>
+                        <Button className="w-full sm:w-auto">Adicionar</Button>
                     </div>
                 </div>
             </section>
@@ -129,4 +173,4 @@ const ProfilePage = () => {
     );
 };
 
-export default ProfilePage;
+export default AddPostPage;
