@@ -40,24 +40,24 @@ const HeaderProfile = () => {
                             <Button
                                 color="secondary"
                                 className="flex w-full items-center justify-center gap-4 sm:w-auto"
-                                onClick={() => setSection('addPost')}
-                            >
-                                <PlusIcon />
-                                Adicionar Post
-                            </Button>
-                            <Button
-                                color="secondary"
-                                className="flex w-full items-center justify-center gap-4 sm:w-auto"
                                 onClick={() => setSection('profile')}
                             >
                                 <UserIcon />
                                 Meus Dados
                             </Button>
+                            <Button
+                                color="secondary"
+                                className="flex w-full items-center justify-center gap-4 sm:w-auto"
+                                onClick={() => setSection('addPost')}
+                            >
+                                <PlusIcon />
+                                Adicionar Post
+                            </Button>
                         </div>
                     </div>
                 </div>
 
-                <Divider className="mb-20" />
+                <Divider />
             </div>
         </section>
     );

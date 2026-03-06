@@ -30,8 +30,8 @@ const AddPostSection = () => {
     };
 
     return (
-        <>
-            <section className="mt-42.5">
+        <main className="overflow-hidden">
+            <section data-aos="fade-left">
                 <div className="container space-y-20 px-4">
                     <div className="mt-20 flex flex-col gap-4">
                         <TextTitle size="h3" color="secondary">
@@ -128,7 +128,7 @@ const AddPostSection = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </main>
     );
 };
 

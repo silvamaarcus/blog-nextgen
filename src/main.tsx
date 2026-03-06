@@ -1,5 +1,7 @@
 import './index.css';
+import 'aos/dist/aos.css';
 
+import AOS from 'aos';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -8,6 +10,7 @@ import LoginPage from './features/auth';
 import NotFoundPage from './features/not-found';
 import PostPage from './features/post';
 import ProfilePage from './features/profile';
+AOS.init();
 
 const router = createBrowserRouter([
     {
