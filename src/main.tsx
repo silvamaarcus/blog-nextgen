@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AddPostPage from './features/add-post';
 import LoginPage from './features/auth';
 import NotFoundPage from './features/not-found';
+import PostPage from './features/post';
 import ProfilePage from './features/profile';
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     {
         path: '*',
         element: <NotFoundPage />,
+    },
+    {
+        path: '/post/:postId',
+        element: <PostPage />,
     },
 ]);
 
