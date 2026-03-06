@@ -10,7 +10,7 @@ import Divider from '../ui/Divider';
 const Footer = () => {
     return (
         <footer>
-            <div className="container">
+            <div className="container mt-90">
                 <div className="grid grid-cols-1 gap-8 px-4 sm:grid-cols-12">
                     <div className="col-span-12 sm:col-span-3">
                         <TextTitle size="h4" color="secondary">
