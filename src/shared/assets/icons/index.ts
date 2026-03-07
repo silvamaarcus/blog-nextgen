@@ -1,4 +1,6 @@
+import ArrowRightIcon from './arrow-right.svg?react';
 import BlogLogoIcon from './blog-logo.svg?react';
+import BlogLogoIconLg from './blog-logo-large.svg?react';
 import CopyIcon from './copy.svg?react';
 import CpuIcon from './cpu.svg?react';
 import DatabaseIcon from './database.svg?react';
@@ -40,7 +42,9 @@ import YoutubeIcon from './youtube.svg?react';
 import ZapIcon from './zap.svg?react';
 
 export {
+    ArrowRightIcon,
     BlogLogoIcon,
+    BlogLogoIconLg,
     CopyIcon,
     CpuIcon,
     DatabaseIcon,
