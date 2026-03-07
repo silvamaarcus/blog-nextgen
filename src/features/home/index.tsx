@@ -18,14 +18,14 @@ const HomePage = () => {
                         <BlogLogoIconLg className="hover:opacity-80" />
                         <span className="flex">
                             <TextTitle
-                                size="h3"
+                                size="h1"
                                 color="secondary"
                                 className="font-normal"
                             >
                                 blog
                             </TextTitle>
                             <TextTitle
-                                size="h3"
+                                size="h1"
                                 color="primary"
                                 className="font-normal"
                             >
