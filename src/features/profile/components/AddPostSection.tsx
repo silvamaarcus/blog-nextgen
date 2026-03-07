@@ -10,7 +10,7 @@ import {
     ToggleSwitch,
 } from '@/shared/assets/components/ui';
 
-import TextEditor from './TextEditor';
+import TextEditor from './TextEditor/TextEditor';
 
 const options = [
     { value: 'tecnologia', label: 'Tecnologia' },
