@@ -40,6 +40,12 @@ body {
     --color-brand-yellow: #ffce52;
     --color-brand-green: #0bb07b;
 
+    --background-image-brand-gradient-animate: linear-gradient(
+        to right,
+        rgba(83, 144, 227, 0.2),
+        rgba(19, 87, 179, 0.2)
+    );
+
     --background-image-brand-gradient-blue-light: linear-gradient(
         to right,
         #5390e3,
@@ -63,6 +69,26 @@ body {
         #dadee5,
         #f7f9fc
     );
+
+    @keyframes ripple {
+        0% {
+            transform: translate(-50%, -50%) scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(2.5);
+            opacity: 0;
+        }
+    }
+}
+.animate-ripple {
+    animation: ripple 6s linear infinite;
+    top: 10%;
+    left: 50%;
+    position: absolute;
 }
 
 .btn-gradient-border {
