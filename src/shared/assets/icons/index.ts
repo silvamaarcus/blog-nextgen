@@ -1,6 +1,7 @@
 import ArrowRightIcon from './arrow-right.svg?react';
 import BlogLogoIcon from './blog-logo.svg?react';
 import BlogLogoIconLg from './blog-logo-large.svg?react';
+import ChevronRightIcon from './chevron-right.svg?react';
 import CopyIcon from './copy.svg?react';
 import CpuIcon from './cpu.svg?react';
 import DatabaseIcon from './database.svg?react';
@@ -20,6 +21,13 @@ import GridIcon from './grid.svg?react';
 import HashIcon from './hash.svg?react';
 import HeartIcon from './heart.svg?react';
 import HomeIcon from './home.svg?react';
+import BgBookIcon from './icon-book.svg?react';
+import BgEmailIcon from './icon-email.svg?react';
+import BgFlashIcon from './icon-flash.svg?react';
+import BgLayersIcon from './icon-layers.svg?react';
+import BgLikeIcon from './icon-like.svg?react';
+import BgStarIcon from './icon-star.svg?react';
+import BgTimeIcon from './icon-time.svg?react';
 import InstagramIcon from './instagram.svg?react';
 import LayersIcon from './layers.svg?react';
 import LockIcon from './lock.svg?react';
@@ -43,8 +51,16 @@ import ZapIcon from './zap.svg?react';
 
 export {
     ArrowRightIcon,
+    BgBookIcon,
+    BgEmailIcon,
+    BgFlashIcon,
+    BgLayersIcon,
+    BgLikeIcon,
+    BgStarIcon,
+    BgTimeIcon,
     BlogLogoIcon,
     BlogLogoIconLg,
+    ChevronRightIcon,
     CopyIcon,
     CpuIcon,
     DatabaseIcon,
