@@ -15,7 +15,7 @@ export default defineConfig([
         extends: [
             js.configs.recommended,
             tseslint.configs.recommended,
-            reactHooks.configs.flat,
+            reactHooks.configs.flat.recommended,
             reactRefresh.configs.vite,
         ],
         languageOptions: {
@@ -35,7 +35,6 @@ export default defineConfig([
                 'warn',
                 { allowConstantExport: true },
             ],
-            'no-console': 'error',
         },
         settings: {
             react: {
